@@ -1,0 +1,26 @@
+<!-- login.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Farming Assistant</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Login</h1>
+    <div id="errorMsg" class="alert alert-danger" style="display: none;"></div>
+    <form id="loginForm" onsubmit="return validateForm()">
+        <label for="usernameEmail">Username/Email:</label>
+        <input type="text" id="usernameEmail" name="usernameEmail" required><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+        <input type="submit" value="Login">
+    </form>
+
+    <script src="login.js"></script>
+</body>
+
+</html>
